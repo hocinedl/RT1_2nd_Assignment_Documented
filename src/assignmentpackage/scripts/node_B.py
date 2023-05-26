@@ -54,10 +54,10 @@ def callback1_sub(msg):
     state = msg.status.status
     if state == 2:
         count_canceled += 1
-        print("Number of goal canceled is {:.1f}".format(count_canceled))
+        print("Number of goals canceled is {:.1f}".format(count_canceled))
     elif state == 3:
         count_reached += 1
-        print("Number of goal canceled is {:.1f}".format(count_reached))
+        print("Number of goals reached is {:.1f}".format(count_reached))
 
 def callback2_srv(req):
     """
