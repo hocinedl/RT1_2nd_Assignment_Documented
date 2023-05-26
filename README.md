@@ -7,6 +7,10 @@ RT1_Assignment #2
 <br>4- A node that subscribes to the robot's position and velocity using the custom message and prints the distance of the robot from the target and the robot's average speed. A parameter will be used to set the frequency of publishing the information. (node_C).</br>
 <br>5- And to start the entire simulation, I added to the launch file of the package assignment_2_2022 my nodes so that everything is launched at a time. </br>
 
+The link for the docmentation
+=============================
+https://hocinedl.github.io/workspace_ass/
+
 # Nodes:
 
 First of all I created the WorkSpace and in the /src file of the workspace I cloned the package Assignment_2_2022 and I created a new package which contains /scripts file.
