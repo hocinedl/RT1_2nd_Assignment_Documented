@@ -5,5 +5,5 @@ In this part of the assignment of RT2, we were asked to document our code from t
 
 The link for the docmentation
 =============================
-https://hocinedl.github.io/workspace_ass/
+https://hocinedl.github.io/RT1_2nd_Assignment_Documented/
 
