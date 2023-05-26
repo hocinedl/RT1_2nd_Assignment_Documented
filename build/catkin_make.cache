@@ -1,0 +1,2 @@
+assignment_2_2022:assignmentpackage
+-DCATKIN_DEVEL_PREFIX=/root/Desktop/workspace_ass/devel -DCMAKE_INSTALL_PREFIX=/root/Desktop/workspace_ass/install -G Unix Makefiles
