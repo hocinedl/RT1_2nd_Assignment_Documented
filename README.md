@@ -111,7 +111,11 @@ The notebook incorporates a bar chart to represent the number of reached and not
 
 To provide information about the closest obstacle, the notebook utilizes the laser scanner data. The distance to the nearest obstacle is calculated and displayed in a text box. The laser scanner information is processed, and the values from the topic are used to retrieve the distance to the nearest obstacle and calculate the angle to that obstacle. The widgets display the following:
 
-![Nearest Obstacle](nearest_obstacle.png)
+
+<p align="center">
+  <img src="nearest_obstacle.png" alt="Image" width="500" height="300">
+</p>
+
 
 ### Conclusion
 
