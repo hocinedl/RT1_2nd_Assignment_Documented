@@ -47,10 +47,24 @@ To achieve the desired functionality, the notebook leverages various libraries a
 these are the used libruaries and dependancies: 
 
 ```python
+from ipywidgets import VBox,HBox
+import ipywidgets as widgets
+import jupyros as jr
+import rospy
+from IPython.display import display, clear_output
+import time
+import numpy as np
+from nav_msgs.msg import Odometry
+from geometry_msgs.msg import  Twist
+from assignmentpackage.srv import my_service, my_serviceResponse
+from sensor_msgs.msg import LaserScan 
+from assignment_2_2022.msg import PlanningAction, PlanningGoal
+from assignment_2_2022.msg import  PlanningActionResult, PlanningActionGoal,PlanningActionFeedback
+from geometry_msgs.msg import PoseStamped
+%matplotlib notebook
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
 
-import actionlib
-import actionlib.msg
-import assignment_2_2022.msg
 
 ```
 
