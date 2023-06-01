@@ -59,7 +59,7 @@ To facilitate user control over the robot's movement, the notebook includes butt
 
 
 
-![Motion Buttons](images/robot_demo.png)
+![Motion Buttons](Buttons.png)
 
 
 Position and Target Tracking:
@@ -73,7 +73,7 @@ When the user enter a target position and click on (Send Goal), it creates a cro
 ![Robot Demo](images/robot_demo.png)
 
 in the same time the robot starts moving toward the target pos creating a path, as in this example:
-![Robot Demo](images/robot_demo.png)
+![Robot Demo](Robot_andTarget path.png)
 
 The notebook utilizes widgets, such as text boxes, to display the current position of the robot and the positions of all set and canceled targets. The position data is continuously updated and presented in a user-friendly format, allowing easy tracking of the robot's movements and target status. The positions are visualized using scatter plots, with the robot represented by a circle ('o') and the targets by crosses ('x').
 
