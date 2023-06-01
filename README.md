@@ -22,9 +22,10 @@ To set up Sphinx for my project, I followed these steps:
 3. Writing the documentation: Open the `index.rst` file in the `source` directory and start documenting your project. Sphinx provides various directives and markup syntax to structure your documentation.
 4. Building the documentation: Once I finished  writting the documentation, I navigate to the root directory of my project in the terminal and run `make html`. Sphinx will generate the HTML output in the `build` directory.
 5. View the documentation: Open the generated HTML files in a web browser to view the documentation.
+
 After finishing these steps, I commited the changes on my github repository and created a link to the documentaion.
 
-The link for the docmentation
+### The link for the docmentation
 =============================
 https://hocinedl.github.io/RT1_2nd_Assignment_Documented/
 
