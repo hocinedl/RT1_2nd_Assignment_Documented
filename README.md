@@ -25,8 +25,8 @@ To set up Sphinx for my project, I followed these steps:
 
 After finishing these steps, I commited the changes on my github repository and created a link to the documentaion.
 
-### The link for the docmentation
-=============================
+##### The link for the docmentation
+===================================
 https://hocinedl.github.io/RT1_2nd_Assignment_Documented/
 
 
