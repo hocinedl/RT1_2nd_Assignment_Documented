@@ -39,6 +39,10 @@ https://hocinedl.github.io/RT1_2nd_Assignment_Documented/
 
    In this assignment,I implemented a Jupyter Notebook-based user interface for the second assignment of the course RT1. The goal was to replace the existing user interface node with an interactive notebook that provides real-time information about the robot's position, targets, closest obstacle distance, and target tracking status. The notebook utilizes widgets for user interaction and incorporates plots to visualize the robot's position, path of the robot when going to target positions, laser scanner information, and the number of reached and not-reached targets.
 
+The interface looks like the following:
+
+![interface](full_interface.png)
+
 
 ### Implementation:
 
@@ -96,11 +100,7 @@ I tried to test my code multiple times and i got this robot path when it tries t
 
 I also added a textBox to show the state of the goal, when the user set a goal it displays a message indicating the goal and if he cancels the goal it shows a message canceling a goal.
 
-<div style="display: flex;">
-  <img src="goal_seted.png" alt="Image 1" width="400" />
-  <img src="goal_cancelled" alt="Image 2" width="400" />
-</div>
-
+![goal state](textBox_goal.png)
 
 
 
@@ -113,10 +113,12 @@ The notebook incorporates a bar chart to represent the number of reached and not
 
 ### Closest Obstacle Distance:
 
-To provide information about the closest obstacle, the notebook utilizes the laser scanner data. The distance to the nearest obstacle is calculated and displayed in a text box. The laser scanner information is visualized either as a separate plot or as part of the main plot, depending on the chosen implementation.
+To provide information about the closest obstacle, the notebook utilizes the laser scanner data. The distance to the nearest obstacle is calculated and displayed in a text box. The laser scanner information processed and using the values from the topic I retrieved the distance to the nearest obstacle and I also calculated the angle to that obstacle, and the widgets would display the following :
+
+![nearest obstacle](nearest_obstacle.png)
 
 
-
+### Conclusion:
 In conclusion, my jupyter-Notebook provides an intuitive and interactive environment for monitoring the robot's position, target tracking status, and closest obstacle distance. The use of widgets and visualizations enhances the user experience by presenting relevant information in a clear and concise manner. By replacing the original user interface node with this notebook, the process of controlling and tracking the robot's movement becomes more accessible and efficient.
 
 
