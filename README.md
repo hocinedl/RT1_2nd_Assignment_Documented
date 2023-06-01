@@ -1,39 +1,32 @@
-RT2_Assignment #1 DOCUMENTATION
-===============================
-In this part of the assignment of RT2, we were asked to document our code from the RT1 assignmnt, I used sphinx to document my Python scripts and here is the result :
+# RT2-Assignments
 
+This repository for Research Track 2 Assignmen which is a collection of 3 individual assignments.
+Student: Hocine DELALA, id: 5445123.
+
+## Table of Contents
+
+- [Part1 Documentation of RT1 Second Assignment](#part1-documentation-of-rt1-second-assignment)
+- [Jupyter Notebook Assignment](#jupyter-notebook-assignment)
+- [Statistical Analysis](#statistical-analysis)
+- [Conclusion](#conclusion)
+
+## Part1 Documentation using Sphinx:
+For this part of the assignment, it was simply [the documentation]([https://www.sphinx-doc.org/](https://hocinedl.github.io/RT1_2nd_Assignment_Documented/) of the first semester assignment, I used Sphinx.
+Sphinx is a powerful documentation generation tool that allowed me to create structured and well-formatted documentation for my codebase. Sphinx uses reStructuredText (reST) markup language to write the documentation, which is then transformed into various output formats such as HTML, PDF, and ePub.
+
+To set up Sphinx for my project, I followed these steps:
+
+1. Installing Sphinx: Following the steps giving in the lecture or following the steps in its website.
+2. Initializing Sphinx: To initialize sphinx, we need to open the terminal in the root directory of the package we want to document and run `sphinx-quickstart`.  This command will create a `source` directory containing the configuration file (`conf.py`) and the main documentation file (`index.rst`).
+3. Writing the documentation: Open the `index.rst` file in the `source` directory and start documenting your project. Sphinx provides various directives and markup syntax to structure your documentation.
+4. Building the documentation: Once I finished  writting the documentation, I navigate to the root directory of my project in the terminal and run `make html`. Sphinx will generate the HTML output in the `build` directory.
+5. View the documentation: Open the generated HTML files in a web browser to view the documentation.
+
+After finishing these steps, I commited the changes on my github repository and created a link to the documentaion.
 The link for the docmentation
 =============================
 https://hocinedl.github.io/RT1_2nd_Assignment_Documented/
 
-
-
-RT2_Assignment #2 Jupyter-notebook
-==================================
-# Project Name
-
-A brief description of your project.
-
-## Table of Contents
-
-- [Documentation using Sphinx](#documentation-using-sphinx)
-- [Jupyter Notebook with Widgets and Matplotlib](#jupyter-notebook-with-widgets-and-matplotlib)
-- [Statistical Analysis](#statistical-analysis)
-- [Conclusion](#conclusion)
-
-## Documentation using Sphinx
-
-For the documentation of your assignment, you have utilized Sphinx. Sphinx is a powerful documentation generation tool that allows you to create structured and well-formatted documentation for your codebase. Sphinx uses reStructuredText (reST) markup language to write the documentation, which is then transformed into various output formats such as HTML, PDF, and ePub.
-
-To set up Sphinx for your project, follow these steps:
-
-1. Install Sphinx: Use the package manager of your choice (e.g., pip or conda) to install Sphinx. For example, you can run `pip install sphinx` in your terminal.
-2. Initialize Sphinx: Open a terminal in the root directory of your project and run `sphinx-quickstart`. This command will create a `source` directory containing the configuration file (`conf.py`) and the main documentation file (`index.rst`).
-3. Write your documentation: Open the `index.rst` file in the `source` directory and start documenting your project. Sphinx provides various directives and markup syntax to structure your documentation, add code samples, and create cross-references.
-4. Build the documentation: Once you have written your documentation, navigate to the root directory of your project in the terminal and run `make html`. Sphinx will generate the HTML output in the `build` directory.
-5. View the documentation: Open the generated HTML files in a web browser to view your documentation.
-
-Remember to include any necessary installation instructions or dependencies in your documentation, making it easier for others to use and understand your project.
 
 ## Jupyter Notebook with Widgets and Matplotlib
 
