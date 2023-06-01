@@ -94,6 +94,15 @@ in the same time the robot starts moving toward the target pos creating a path, 
 I tried to test my code multiple times and i got this robot path when it tries to avoid an obstacle to reach a target:
 ![Robot reaches Target example](possiblePathOvoidObstacle.png)
 
+I also added a textBox to show the state of the goal, when the user set a goal it displays a message indicating the goal and if he cancels the goal it shows a message canceling a goal.
+
+<div style="display: flex;">
+  <img src="path/to/image1.jpg" alt="Image 1" width="400" />
+  <img src="path/to/image2.jpg" alt="Image 2" width="400" />
+</div>
+
+
+
 
 ### Target Tracking Status:
 
