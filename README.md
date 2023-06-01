@@ -30,18 +30,69 @@ After finishing these steps, I commited the changes on my github repository and 
 https://hocinedl.github.io/RT1_2nd_Assignment_Documented/
 
 
-## Jupyter Notebook with Widgets and Matplotlib
+## Jupyter Notebook with Widgets and Matplotlib:
 
-In this assignment, you have utilized Jupyter Notebook for interactive data exploration and analysis. Jupyter Notebook is an open-source web application that allows you to create and share documents containing live code, equations, visualizations, and explanatory text. 
 
-To run Jupyter Notebook, follow these steps:
+   Jupyter Notebook is an open-source web application that allows you to create and share documents containing live code, equations, widgets,animation and visualizations, and explanatory text. 
 
-1. Install Jupyter Notebook: Use the package manager of your choice to install Jupyter Notebook. For example, you can run `pip install jupyter` in your terminal.
-2. Launch Jupyter Notebook: Open a terminal and navigate to the directory where your Jupyter Notebook files are located. Run the command `jupyter notebook` to start the Jupyter server.
-3. Interact with the Notebook: Once the server is running, a web browser will open with the Jupyter Notebook interface. From here, you can create new notebooks or open existing ones. Notebooks consist of cells, which can contain code, Markdown text, or other elements. Use the code cells to write and execute your Python code, including the usage of widgets and Matplotlib for interactive visualizations.
-4. Save and export: Make sure to save your work regularly. You can save the notebook in the `.ipynb` format and export it as a PDF or HTML file for sharing or submission.
+   In this assignment,I implemented a Jupyter Notebook-based user interface for the second assignment of the course. The goal was to replace the existing user interface node with an interactive notebook that provides real-time information about the robot's position, targets, closest obstacle distance, and target tracking status. The notebook utilizes widgets for user interaction and incorporates plots to visualize the robot's position, targets, laser scanner information, and the number of reached and not-reached targets.
+///////////////////////////////////////////////////////////////////////////
 
-Remember to include clear explanations and comments within your Jupyter Notebook, making it easier for others to follow your analysis and understand the purpose of each code block. Utilize widgets and Matplotlib effectively to enhance the interactivity and visualization of your data.
+Implementation:
+==============
+
+To achieve the desired functionality, the notebook leverages various libraries and techniques. The matplotlib and FuncAnimation libraries were used for creating interactive plots, while the rospy library enables communication with the robot's navigation system. The nav_msgs.msg module is employed to subscribe to topics such as Odometry and LaserScan, providing access to the robot's position and laser scanner data.
+these are the used libruaries and dependancies: 
+
+```python
+
+import actionlib
+import actionlib.msg
+import assignment_2_2022.msg
+
+```
+
+User Interaction:
+================
+
+To facilitate user control over the robot's movement, the notebook includes buttons for various motion commands. These buttons allow users to start, stop, and modify the robot's behavior within the environment. The notebook ensures that the robot's position and target tracking information are consistently updated to reflect any changes initiated by the user. I used 4 buttons to direct the robot in different directions, and also an interface to set a desired goal and send it or cancel the target.
+
+
+
+![Motion Buttons](images/robot_demo.png)
+
+
+Position and Target Tracking:
+============================
+This part provides a visual representation of the robot's position, target positions. It subscribes to relevant topics to receive position and status information, and updates the plot accordingly. The use of FuncAnimation enables real-time updates and animation of the plot.
+
+When we run the cell it shows cirle representing the robot, as shown here:
+![Robot Demo](images/robot_demo.png)
+
+When the user enter a target position and click on (Send Goal), it creates a crox indicating the target (goal) position, as shown here :
+![Robot Demo](images/robot_demo.png)
+
+in the same time the robot starts moving toward the target pos creating a path, as in this example:
+![Robot Demo](images/robot_demo.png)
+
+The notebook utilizes widgets, such as text boxes, to display the current position of the robot and the positions of all set and canceled targets. The position data is continuously updated and presented in a user-friendly format, allowing easy tracking of the robot's movements and target status. The positions are visualized using scatter plots, with the robot represented by a circle ('o') and the targets by crosses ('x').
+
+Closest Obstacle Distance:
+To provide information about the closest obstacle, the notebook utilizes the laser scanner data. The distance to the nearest obstacle is calculated and displayed in a text box. The laser scanner information is visualized either as a separate plot or as part of the main plot, depending on the chosen implementation.
+
+Target Tracking Status:
+The notebook incorporates a bar chart to represent the number of reached and not-reached targets. The chart is updated in real-time based on feedback received from the robot's navigation system. Each bar represents a target status category (e.g., "Reached" and "Cancelled"), and the height of the bars reflects the corresponding count of targets in each category.
+
+
+
+Conclusion:
+In conclusion, this Jupyter Notebook-based user interface provides an intuitive and interactive environment for monitoring the robot's position, target tracking status, and closest obstacle distance. The use of widgets and visualizations enhances the user experience by presenting relevant information in a clear and concise manner. By replacing the original user interface node with this notebook, the process of controlling and tracking the robot's movement becomes more accessible and efficient.
+
+
+
+
+
+
 
 ## Statistical Analysis
 
