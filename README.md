@@ -32,7 +32,7 @@ After finishing these steps, I commited the changes on my github repository and 
 https://hocinedl.github.io/RT1_2nd_Assignment_Documented/
 
 
-## Part1 Documentation of RT1 Second Assignment
+## Jupyter Notebook Assignment
 
 
    Jupyter Notebook is an open-source web application that allows you to create and share documents containing live code, equations, widgets,animation and visualizations, and explanatory text. 
