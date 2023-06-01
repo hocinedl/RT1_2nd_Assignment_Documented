@@ -41,7 +41,7 @@ https://hocinedl.github.io/RT1_2nd_Assignment_Documented/
 
 The interface looks like the following:
 
-![interface](full_interface.png)
+![interface](Full_interface.png)
 
 
 ### Implementation:
