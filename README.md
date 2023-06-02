@@ -31,7 +31,7 @@ After completing these steps, I committed the changes to my GitHub repository an
 
 ## Jupyter Notebook Assignment
 
-Jupyter Notebook is an open-source web application that allows for the creation and sharing of documents containing live code, equations, widgets, animation, visualizations, and explanatory text.
+Jupyter Notebook is an open-source web application that allows for the creation and sharing of documents containing live code, equations, widgets, animation, visualizations, and explanatory text. The notebook is on the folder **Jupyter**.
 
 In this assignment, I implemented a Jupyter Notebook-based user interface for the second assignment of the RT1 course. The goal was to replace the existing user interface node with an interactive notebook that provides real-time information about the robot's position, targets, closest obstacle distance, and target tracking status. The notebook utilizes widgets for user interaction and incorporates plots to visualize the robot's position, path to target positions, laser scanner information, and the number of reached and not-reached targets.
 
