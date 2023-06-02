@@ -35,15 +35,26 @@ Jupyter Notebook is an open-source web application that allows for the creation 
 
 In this assignment, I implemented a Jupyter Notebook-based user interface for the second assignment of the RT1 course. The goal was to replace the existing user interface node with an interactive notebook that provides real-time information about the robot's position, targets, closest obstacle distance, and target tracking status. The notebook utilizes widgets for user interaction and incorporates plots to visualize the robot's position, path to target positions, laser scanner information, and the number of reached and not-reached targets.
 
+**HOW TO START THE NOTEBOOK**
+1. Create a workspace or in any workspace, go to the src folder and clone my repository that contains two packages: the pachage given by the prof **assignmet_2_2022** which contains the launch file needed to start everything and the package I created **assignmentpackage**.
+2. Launch everything using the commande :
+```python
+roslaunch assignment_2_2022 assignment11.launch
+```
+3. Download the notebook file **assignment-notebook** and run the notebook using : 
+```python
+jupyter-notebook --allow-root
+```
+4. From the jupyter **Run All Cells**, the cell before the last will display the folowing interface:   
 
 
-The interface looks like the following:
+<p align="center">
+  <img src="Full_interface.png" alt="Image" width="500" height="300">
+</p>
 
-![interface](Full_interface.png)
-
+5. From this interface you have the possibility to move the robot in different direction and see its path thanks to the position plot, also you can set a target and the robot to that target and you can cancel it any time you want, you can also see the bar chart for the reached and calceled targets. For the distance from the nearest obstacle, it is displayed in the last cell.
 
 ### Implementation:
-
 
 To achieve the desired functionality, the notebook leverages various libraries and techniques. The matplotlib and FuncAnimation libraries were used for creating interactive plots, while the rospy library enables communication with the robot's navigation system. The nav_msgs.msg module is employed to subscribe to topics such as Odometry and LaserScan, providing access to the robot's position and laser scanner data.
 these are the used libruaries and dependancies: 
@@ -75,7 +86,9 @@ from matplotlib.animation import FuncAnimation
 
 To facilitate user control over the robot's movement, the notebook includes buttons for various motion commands. These buttons allow users to start, stop, and modify the robot's behavior within the environment. The notebook ensures that the robot's position and target tracking information are consistently updated to reflect any changes initiated by the user. I used four buttons to direct the robot in different directions and provided an interface to set a desired goal and send or cancel the target.
 
-![Motion Buttons](Buttons.png)
+<p align="center">
+  <img src="Buttons.png" alt="Image" width="500" height="300">
+</p>
 
 ### Position and Target Tracking
 
