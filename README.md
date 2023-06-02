@@ -96,19 +96,29 @@ This part provides a visual representation of the robot's position and target po
 
 When the cell is executed, it displays a circle representing the robot's position. For example:
 
-![Robot Position](Robot_position_at_start.png)
+
+<p align="center">
+  <img src="Robot_position_at_start.png" alt="Image" width="500" height="300">
+</p>
 
 When the user enters a target position and clicks on "Send Goal," a cross indicating the target (goal) position is displayed. For example:
 
-![Goal Marking](Robot_position_after-settingGoal.png)
+
+<p align="center">
+  <img src="Robot_position_after-settingGoal.png" alt="Image" width="500" height="300">
+</p>
+
 
 At the same time, the robot starts moving toward the target position, creating a path. For example:
 
-![Robot Reaches Target](Robot_andTarget_Path.png)
-
+<p align="center">
+  <img src="Robot_andTarget_Path.png" alt="Image" width="500" height="300">
+</p>
 I tested my code multiple times, and here is an example of the robot's path when it tries to avoid an obstacle to reach a target:
 
-![Robot Reaches Target Example](possiblePathOvoidObstacle.png)
+<p align="center">
+  <img src="possiblePathOvoidObstacle.png" alt="Image" width="500" height="300">
+</p>
 
 I also added a text box to show the state of the goal. When the user sets a goal, it displays a message indicating the goal, and if the user cancels the goal, it shows a message canceling the goal.
 
@@ -118,8 +128,9 @@ I also added a text box to show the state of the goal. When the user sets a goal
 
 The notebook incorporates a bar chart to represent the number of reached and not-reached targets. The chart is updated in real-time based on feedback received from the robot's goal action client. Each bar represents a target status category ("Reached" and "Cancelled"), and the height of the bars reflects the corresponding count of targets in each category.
 
-![Reached and Cancelled Goals](CountReacheCanceled.png)
-
+<p align="center">
+  <img src="CountReacheCanceled.png" alt="Image" width="500" height="300">
+</p>
 ### Closest Obstacle Distance
 
 To provide information about the closest obstacle, the notebook utilizes the laser scanner data. The distance to the nearest obstacle is calculated and displayed in a text box. The laser scanner information is processed, and the values from the topic are used to retrieve the distance to the nearest obstacle and calculate the angle to that obstacle. The widgets display the following:
