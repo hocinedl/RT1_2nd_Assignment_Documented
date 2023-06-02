@@ -142,6 +142,11 @@ To provide information about the closest obstacle, the notebook utilizes the las
 </p>
 
 
+
+## Statistical Analysis
+
+In this part of the assignment, we were asked to perform  a statistical analysis comparing the performance of two code implementations: my code and Baba's code of the RT1 first assignment. Find the [report] (./report.pdf) of this analysis which explores a full statistical analysis with hyposthesis, expirements and tests leading to conclusion.
+
 ### Conclusion
 
 In conclusion, my Jupyter Notebook provides an intuitive and interactive environment for monitoring the robot's position, target tracking status, and closest obstacle distance. The use of widgets and visualizations enhances the user experience by presenting relevant information in a clear and concise manner. By replacing the original user interface node with this notebook, the process of controlling and tracking the robot's movement becomes more accessible and efficient.
