@@ -145,7 +145,7 @@ To provide information about the closest obstacle, the notebook utilizes the las
 
 ## Statistical Analysis
 
-In this part of the assignment, we were asked to perform  a statistical analysis comparing the performance of two code implementations: my code and Baba's code of the RT1 first assignment. Find the [report] (./Statistical_analysisRT2.pdf) of this analysis which explores a full statistical analysis with hyposthesis, expirements and tests leading to conclusion.
+In this part of the assignment, we were asked to perform  a statistical analysis comparing the performance of two code implementations: my code and Baba's code of the RT1 first assignment. Find the ![report] (./Statistical_analysisRT2.pdf) of this analysis which explores a full statistical analysis with hyposthesis, expirements and tests leading to conclusion.
 
 ### Conclusion
 
