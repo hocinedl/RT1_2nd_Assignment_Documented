@@ -131,6 +131,7 @@ The notebook incorporates a bar chart to represent the number of reached and not
 <p align="center">
   <img src="CountReacheCanceled.png" alt="Image" width="500" height="300">
 </p>
+
 ### Closest Obstacle Distance
 
 To provide information about the closest obstacle, the notebook utilizes the laser scanner data. The distance to the nearest obstacle is calculated and displayed in a text box. The laser scanner information is processed, and the values from the topic are used to retrieve the distance to the nearest obstacle and calculate the angle to that obstacle. The widgets display the following:
